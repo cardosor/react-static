@@ -1,0 +1,71 @@
+:root {
+    --dark-cerulean: #124e78;
+    --maastricht-blue: #0b132b;
+    --yankees-blue: #1C2541;
+    --sea-serpent: #5bc0be;
+    --aquamarine: #6fffe9;
+    --react: #00d8ff;
+  }
+  
+  html {
+    background: var(--yankees-blue);
+  }
+
+.container{
+  display: grid;
+}
+  
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin: 20px;
+  margin-top: 40px;
+  }
+    
+.side-bar { 
+  display: flex;
+  flex-direction: column;
+  grid-area: 1 / 1 / 6 / 2; 
+  background-color: gray;
+  height: 80vh;
+  min-width: 200px;
+  min-height: 800px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+
+}
+.data-container { 
+  display: flex;
+  min-width: 800px;
+  min-height: 200px;
+  flex-direction: row;
+  grid-area: 1 / 2 / 3 / 6; 
+  background-color: aliceblue;
+  gap: 20px;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+.data { 
+  display: block;
+  background-color: gray;
+  min-width: 30%;
+  min-height: 80%;
+}
+
+.graph { 
+  grid-area: 3 / 2 / 6 / 6; 
+  background-color: beige;
+} 
+
+.display-graph{
+  width: 90%;
+  height: 60%;
+  margin: auto;
+  background-color: gray;
+}
